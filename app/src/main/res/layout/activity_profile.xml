@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/profilebackground">
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="325sp"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/editicon" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250sp"
+        android:text="email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"
+        android:enabled="false"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24_black"
+        android:drawablePadding="20sp"
+        android:hint="Full Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="5sp"
+        android:hint="Phone Number"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+        android:drawablePadding="20sp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="5sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Blood Type"
+        android:drawableLeft="@drawable/ic_baseline_bloodtype_24"
+        android:drawablePadding="20sp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blood"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="5sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Gender"
+        android:drawableLeft="@drawable/ic_baseline_bloodtype_24"
+        android:drawablePadding="20sp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30sp"
+        android:text="Reset Password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resetPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:text="Update Email"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resetPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70sp"
+        android:backgroundTint="#C53838"
+        android:text="Save Changes"
+        android:paddingVertical="10sp"
+        android:paddingHorizontal="40sp"
+        />
+
+</RelativeLayout>

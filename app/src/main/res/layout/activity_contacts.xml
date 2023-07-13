@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity"
+    android:background="@drawable/contactsbackground"
+    >
+
+
+    <Button
+        android:id="@+id/addContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="#FF5722"
+        android:text="ADD EMERGENCY CONTACT"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_below="@+id/contact4"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300sp"
+        android:background="@drawable/radiusbox"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:padding="16sp"
+        android:hint="Emergency Contact 1"
+        android:inputType="phone"
+        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/contact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:background="@drawable/radiusbox"
+        android:padding="16sp"
+        android:layout_below="@id/contact1"
+        android:hint="Emergency Contact 2"
+        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20sp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/contact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:background="@drawable/radiusbox"
+        android:padding="16sp"
+        android:layout_below="@id/contact2"
+        android:hint="Emergency Contact 3"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20sp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/contact4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:background="@drawable/radiusbox"
+        android:padding="16sp"
+        android:layout_below="@id/contact3"
+        android:hint="Emergency Contact 4"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20sp"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/editicon" />
+
+
+</RelativeLayout>

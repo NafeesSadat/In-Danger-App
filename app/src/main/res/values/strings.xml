@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">inDanger New</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="forgot_password"><u>Forgot Password?</u>.</string>
+    <string name="sign_up"><u>New User? Sign Up Now</u>.</string>
+</resources>

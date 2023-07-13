@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mainbackground"
+    android:id="@+id/mainPage">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/emergency"
+        android:layout_width="297dp"
+        android:layout_height="304dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        app:srcCompat="@drawable/mainbutton" />
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emergency"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="#C53838"
+        android:drawableLeft="@drawable/ic_baseline_person_add_alt_24"
+        android:drawablePadding="20sp"
+        android:text="Contacts"
+        android:paddingVertical="10sp"
+        android:paddingHorizontal="50sp"/>
+
+    <Button
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#C53838"
+        android:drawableLeft="@drawable/ic_baseline_bloodtype_24_white"
+        android:drawablePadding="20sp"
+        android:text="Request Blood"
+        android:paddingVertical="10sp"
+        android:paddingHorizontal="30sp"/>
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginTop="20sp"
+        app:srcCompat="@drawable/ic_baseline_person_outline_24_black" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_below="@+id/profileIcon"
+        android:layout_marginLeft="313sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/logoutIcon"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:srcCompat="@drawable/ic_baseline_logout_24"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"/>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_below="@+id/logoutIcon"
+        android:layout_marginLeft="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+
+
+
+</RelativeLayout>
+
